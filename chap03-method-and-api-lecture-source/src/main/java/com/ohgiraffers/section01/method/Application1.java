@@ -10,6 +10,10 @@ public class Application1 {
          *  메소드(method)는 어떤 특정 작업을 수행하기 위한 명령문의 집합이라고 할 수 있다.
         * */
 
+        /* 필기.
+         *  Last In, First Out (LIFO)
+         *  First In, Last Out (FILO)
+        * */
         System.out.println("main() 시작됨...");
         methodA();          // 메소드가 다른 메소드를 호출하는 구조
         System.out.println("main() 종료됨...");
@@ -23,5 +27,12 @@ public class Application1 {
 
     public static void methodB() {
         System.out.println("methodB() 호출됨...");
+        methodC();
+        System.out.println("methodB() 종료됨...");
+    }
+
+    public static void methodC() {
+        System.out.println("methodC() 호출됨...");
+        System.out.println("methodC() 종료됨...");
     }
 }
