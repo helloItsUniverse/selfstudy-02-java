@@ -53,7 +53,6 @@ public class Application1 {
         System.out.println(num1 > num2 || num3 < num4);
         System.out.println(num1 > num2 || num3 > num4);
 
-
-
+        // 우선순위: 단산시교비논삼대
     }
 }
