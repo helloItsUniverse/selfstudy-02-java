@@ -32,6 +32,7 @@ public class Application3 {
 //        app3.testMethod(19, 20);              // argument 개수가 안맞아서 에러
         app3.testMethod('a');              // 'a' -> 97        : upcasting
         app3.testMethod((int)12.34);            // (int)12.34 -> 12 : downcasting
+        app3.testMethod(3 * 2);
     }
 
     /* 설명. 정수를 주면 나이를 출력해주는 기능을 가진 메소드(non-static) */
