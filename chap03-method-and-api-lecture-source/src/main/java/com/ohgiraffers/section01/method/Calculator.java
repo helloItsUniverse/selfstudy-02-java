@@ -7,7 +7,7 @@ public class Calculator {
     }
 
     public int subTwoNumbers(int first, int second) {
-        return first + second;
+        return first - second;
     }
 
     public int multiTwoNumbers(int first, int second) {
