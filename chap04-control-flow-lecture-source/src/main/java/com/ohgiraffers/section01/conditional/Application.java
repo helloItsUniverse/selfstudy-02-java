@@ -31,6 +31,11 @@ public class Application {
 //        cClass.testNestedIfElseIfStatement2();    // 강사님이한거
 
         /* 필기. 중첩 if-else-if문 로직 개선 */
-        cClass.testNestedIfElseIfStatement3();    // 개선시킨거
+//        cClass.testNestedIfElseIfStatement3();    // 개선시킨거
+
+        D_switch dClass = new D_switch();
+
+        /* 필기. switch문 흐름 확인용 메소드 호출 */
+        dClass.testSimpleSwitchStatement();
     }
 }
