@@ -19,7 +19,7 @@ public class Application2 {
 
         char[] cArr = new char[5];
 
-        /* 필기.  참조 자료형 변수 출력 결과: = 자료형@16진수주소갑*/
+        /* 필기.  참조 자료형 변수 출력 결과: = 자료형@16진수주소값*/
         System.out.println("iArr = " + iArr);
         System.out.println("cArr = " + cArr);
 
