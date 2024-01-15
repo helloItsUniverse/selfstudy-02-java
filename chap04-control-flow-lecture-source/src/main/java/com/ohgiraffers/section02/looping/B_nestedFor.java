@@ -162,6 +162,8 @@ public class B_nestedFor {
 //                3 1 3
 
 // Stars Algorithm (when 5)
+// (input + 1) / 2 = 3
+// input = 5
 
 // -2 * |x - 3| + 5
 
