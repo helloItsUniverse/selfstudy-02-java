@@ -68,21 +68,13 @@ public class B_nestedFor {
      *
     * */
     public void printStars() {
-//        String space = " ";
-//        String star = "*";
         String row = "";
         System.out.print("정수를 입력하세요: ");
         Scanner sc = new Scanner(System.in);
         int numRows = sc.nextInt();
         for(int i = 1; i <= numRows; i++) {
             row = printSpaceLeft(row, numRows, i);
-//            for (int j = 1; j <= numRows - i; j++) {
-//                row += space;
-//            }
             row = printStar(row, i);
-//            for (int k = 1; k <= i; k++) {
-//                row += star;
-//            }
             System.out.println(row);
             row = "";
         }
@@ -103,15 +95,57 @@ public class B_nestedFor {
     }
 
     public void printStarsDiamond() {
-        String space = " ";
-        String star = "*";
         String row = "";
         System.out.print("정수를 입력하세요: ");
         Scanner sc = new Scanner(System.in);
-        int numRows = sc.nextInt();
+        int input = sc.nextInt();
 
-        for (int i = 1; i <= numRows; i++) {
-            for (int j = 1; j <= i; j++) {
+        for (int i = 1; i <= input; i++) {
+            // void method ver.
+            printStarsDiamondSpaceVoid(input, i);
+            printStarsDiamondStarVoid(input, i);
+            printStarsDiamondSpaceVoid(input, i);
+            System.out.println();
+        }
+
+        System.out.println();
+
+        for (int i = 1; i <= input; i++) {
+            // String method ver.
+            row = printStarsDiamondSpaceString(row, input, i);
+            row = printStarsDiamondStarString(row, input, i);
+            row = printStarsDiamondSpaceString(row, input, i);
+            System.out.println(row);
+            row = "";
+        }
+    }
+
+    private String printStarsDiamondSpaceString(String row, int input, int i) {
+        for (int j = 1; j <= Math.abs(((input + 1) / 2) - i); j++) {
+            row += " ";
+        }
+        return row;
+    }
+
+    private String printStarsDiamondStarString(String row, int input, int i) {
+        for (int k = 1; k <= -2 * Math.abs(i - (input + 1) / 2) + input ; k++) {
+            row += "*";
+        }
+        return row;
+    }
+
+    private void printStarsDiamondSpaceVoid(int input, int i) {
+        for (int j = 1; j <= Math.abs(((input + 1) / 2) - i); j++) {
+            System.out.print(" ");
+        }
+    }
+
+    private void printStarsDiamondStarVoid(int input, int i) {
+        for (int k = 1; k <= -2 * Math.abs(i - (input + 1) / 2) + input ; k++) {
+            System.out.print("*");
+        }
+    }
+}
 
 //                2 1 2
 //                1 3 1
@@ -126,7 +160,18 @@ public class B_nestedFor {
 //                1 5 1
 //                2 3 2
 //                3 1 3
-            }
-        }
-    }
-}
+
+// Stars Algorithm (when 5)
+
+// -2 * |x - 3| + 5
+
+// -2 * |1 - 3| + 5 = 1
+// -2 * |2 - 3| + 5 = 3
+// -2 * |3 - 3| + 5 = 5
+// -2 * |4 - 3| + 5 = 3
+// -2 * |5 - 3| + 5 = 1
+
+//when 7
+
+// -2 * |1 - 4| + 7 = 1
+

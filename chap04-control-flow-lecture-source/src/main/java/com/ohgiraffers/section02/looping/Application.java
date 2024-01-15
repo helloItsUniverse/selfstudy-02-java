@@ -19,8 +19,8 @@ public class Application {
 //        bClass.printUpgradedGugudanFromTwoToNine();
 
         /* 필기. 중첩 반복문을 활용한 별 찍기 관련 예제 */
-        bClass.printStars();
-//        bClass.printStarsDiamond();
+//        bClass.printStars();
+        bClass.printStarsDiamond();
 
         C_while cClass = new C_while();
 //        cClass.testSimpleWhileStatement();
