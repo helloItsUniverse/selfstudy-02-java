@@ -1,5 +1,7 @@
 package com.ohgiraffers.section02.dimensional;
 
+import java.util.Arrays;
+
 public class Application1 {
     public static void main(String[] args) {
 
@@ -10,7 +12,28 @@ public class Application1 {
         * */
 
         int[][] iArr1;
-        iArr1 = new int[3][2];
+        int[][] iArr2;
+        iArr1 = new int[3][2];      // 정변 배열을 위한 선언 방식(관리하는 1차원 배열의 길이가 동일)
+        iArr2 = new int[3][];       // 가변 배열을 위한 선언 방식(관리하는 1차원 배열의 길이가 각각 다를 시)
+//        iArr2 = new int[][];      // 컴파일 에러 발생
 
+        /* 설명. 정변 배열은 이미 1차원 배열들이 생성되어 지정되어 있다. */
+        int num = 0;
+        for (int i = 0; i < iArr1.length; i++) {            // 1차원 배열을 고르는 for문
+            for (int j = 0; j < iArr1[i].length; j++) {     // 선택된 1차원 배열의 길이만큼 반복하는 for문
+                iArr1[i][j] = num++;
+            }
+            System.out.println(Arrays.toString(iArr1[i]));
+        }
+
+        /* 설명. 가변 배열은 아직 1차원 배열들이 생성되어 있지 않다. (NullPointerException 도 발생 가능) */
+        int length = 1;
+        for (int i = 0; i < iArr2.length; i++) {            // 1차원 배열을 고르는 for문
+            iArr2[i] = new int[++length];
+            for (int j = 0; j < iArr2[i].length; j++) {     // 선택된 1차원 배열의 길이만큼 반복하는 for문
+                iArr2[i][j] = num++;
+            }
+            System.out.println(Arrays.toString(iArr2[i]));
+        }
     }
 }
