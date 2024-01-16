@@ -20,7 +20,7 @@ package com.ohgiraffers.baekjoon_exercise;
 // 9
 // 1
 
-//import java.util.Arrays;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class boj_ex_11659 {
@@ -33,21 +33,20 @@ public class boj_ex_11659 {
 //        System.out.print("N M 입력: ");
         int N = sc.nextInt();
         int M = sc.nextInt();
-        int[] arr = new int[N];
+        int[] arr = new int[N + 1];
         int[] arrOut = new int[M];
 
-        for (int i = 0; i < N; i++) {
+        for (int i = 1; i <= N; i++) {
 //            System.out.println("총 "+ N + "번째 중 " + (i + 1) + "번째 숫자 입력" );
-            arr[i] = sc.nextInt();
+            arr[i] = arr[i-1] + sc.nextInt();
         }
 //        System.out.println(Arrays.toString(arr));
 
         for (int i = 0; i < M; i++) {
             hStart = sc.nextInt();
             hEnd = sc.nextInt();
-            for (int j = hStart - 1; j < hEnd; j++) {
-                arrOut[i] += arr[j];
-            }
+            arrOut[i] = arr[hEnd] - arr[hStart - 1];
+
         }
         for (int out : arrOut) {
             System.out.println(out);
