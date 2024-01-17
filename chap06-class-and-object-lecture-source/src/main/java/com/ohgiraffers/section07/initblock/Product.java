@@ -1,7 +1,7 @@
 package com.ohgiraffers.section07.initblock;
 
 public class Product {
-    private String name;            // 상품명
+    private String name = "모토로라";            // 상품명
     private int price;              // 상품가격
     private static String brand;    // 제조사
 

@@ -35,7 +35,7 @@ public class Application {
         Rectangle r1 = new Rectangle(12.5, 22.5);
 //        r1.calArea();
 //        r1.calRound();
-        pt.testClassTyprParameter(r1);
+        pt.testClassTypeParameter(r1);
 
         /* 목차. 4. 아직 클래스 배열(객체 배열)은 배우지 않았으므로 건너 뜀 */
         /* 목차. 5. 가변인자를 매개변수로 전달 받는 메소드 호출 */

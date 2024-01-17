@@ -16,7 +16,7 @@ public class ParameterTest {
         System.out.println("매개변수로 전달받은 값: " + Arrays.toString(iArr));
     }
 
-    public void testClassTyprParameter(Rectangle rectangle) {
+    public void testClassTypeParameter(Rectangle rectangle) {
 
         /* 설명. 전달받은 객체의 사각형 넓이와 둘레 출력 */
         System.out.println("====== 변경 전 사각형의 넓이와 둘레 ======");
