@@ -1,5 +1,6 @@
 package com.ohgiraffers.baekjoon_exercise;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 // 첫째 줄에 표의 크기 N과 합을 구해야 하는 횟수 M이 주어진다. (1 ≤ N ≤ 1024, 1 ≤ M ≤ 100,000)
@@ -12,5 +13,36 @@ public class boj_ex_11660 {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         int M = sc.nextInt();
+        int[][] arr = new int[N + 1][N + 1];
+        int[][] arrSum = new int[N + 1][N + 1];
+
+//        for (int i = 0; i < arrSum.length; i++) {
+//            System.out.println(Arrays.toString(arrSum[i]));
+//        }
+
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = 1; j < arr[i].length; j++) {
+                arr[i][j] = sc.nextInt();
+            }
+        }
+
+        for (int i = 1; i < arrSum.length; i++) {
+            for (int j = 1; j < arrSum[i].length; j++) {
+                arrSum[i][j] = arr[i][j] + arrSum[i - 1][j] + arrSum[i][j - 1] - arrSum[i - 1][j - 1];
+            }
+        }
+
+//        // arr 잘 들어갔나 확인용
+//        for (int i = 0; i < arr.length; i++) {
+//            System.out.println(Arrays.toString(arr[i]));
+//        }
+//
+//        System.out.println();
+//
+//        for (int i = 0; i < arrSum.length; i++) {
+//            System.out.println(Arrays.toString(arrSum[i]));
+//        }
+
+
     }
 }
