@@ -56,7 +56,7 @@ public class Application1 {
             ((Tiger)an1).bite();
         }
         if(an1 instanceof Rabbit){      // an1은 Rabbit 타입의 인스턴스인가
-            ((Rabbit)an2).jump();
+            ((Rabbit)an1).jump();
         }
 
         /* 설명. 다형성은 상속관계인 객체들간의 형변환 */
