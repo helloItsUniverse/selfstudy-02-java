@@ -19,6 +19,7 @@ public class Application3 {
         animal1.eat();
     }
 
+    // 이것도 같은 짓
 //    private void feed(Object animal1) {
 //        ((Animal)animal1).eat();
 //    }
