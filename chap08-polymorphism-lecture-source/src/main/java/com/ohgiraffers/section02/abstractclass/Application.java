@@ -19,6 +19,8 @@ public class Application {
          *  ex) public abstract void method();
         * */
 
+
+
         /* 설명. abstract 클래스는 객체를 생성할 수 없는 불완전한 클래스이다. */
 //        Product product = new Product();
 
