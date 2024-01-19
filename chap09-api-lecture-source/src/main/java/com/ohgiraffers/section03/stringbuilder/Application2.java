@@ -8,7 +8,7 @@ public class Application2 {
         System.out.println(sb.capacity());
 
         /* 필기 capacity(): 용량을 정수형으로 반환하는 메소드(초기 16byte 할당) */
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 5; i++) {
             sb.append(i);
 
             /* 설명. 용량을 초과할 것 같으면 (X 2 + 1)만큼씩 증가한다. */

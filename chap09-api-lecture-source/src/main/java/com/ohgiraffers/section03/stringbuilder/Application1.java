@@ -17,7 +17,7 @@ public class Application1 {
         String testStr = "java";
         StringBuilder testsb = new StringBuilder("kotlin");
 
-        for (int i = 0; i < 19; i++) {
+        for (int i = 0; i < 5; i++) {
             testStr += i;
             testsb.append(i);
 
