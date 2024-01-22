@@ -1,3 +1,5 @@
+package com.ohgiraffers.teamStudy.ts_0116_inheritance.ex_account;
+
 public class Account {
    private double bal;  //The current balance
    private int accnum;  //The account number
