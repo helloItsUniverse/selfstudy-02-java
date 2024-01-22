@@ -2,22 +2,22 @@ package com.ohgiraffers.teamStudy.ts_0116_inheritance.ex_account;
 
 public class CheckingAccount extends Account {
 
-    public CheckingAccount(int a) {
+    private double overDraftmount;
+
+    public CheckingAccount (int a, double overDraftmount){
         super(a);
+        this.overDraftmount = overDraftmount;
     }
 
-    @Override
-    public void deposit(double sum) {
-        super.deposit(sum);
-    }
+    public void draft(double sum){
+        double bal = getBalance();
 
-    @Override
-    public void withdraw(double sum) {
-        int overdraft = 20000;
-        super.withdraw(sum);
-        if (super.getBalance() + overdraft > 0) {
-            System.out.println("수표 부도남");
-
+        if(bal + overDraftmount >= sum){
+            withdraw(sum);
+        } else{
+            System.out.println("부도");
         }
     }
+
+
 }

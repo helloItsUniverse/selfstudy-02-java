@@ -4,27 +4,35 @@ import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        int accnum = sc.nextInt();
-//        Account account = new Account(accnum);
-//        account.deposit(10000);
-//        System.out.println(account);
-//        account.withdraw(20000);
-//        account.withdraw(-30000);
-//        System.out.println(account);
 
-        System.out.println("=========================");
-        Account account1 = new SavingAccount(234);
-        System.out.println(account1);
-        account1.deposit(10000);
+        SavingAccount savingAccount = new SavingAccount(0, 1.5);
+        savingAccount.deposit(50000);
+        CheckingAccount checkingAccount = new CheckingAccount(1, 20);
+        checkingAccount.deposit(100000);
+        StudentAccount studentAccount = new StudentAccount(2, 3.5, 2030);
+        studentAccount.deposit(30000);
 
-//        System.out.println("=========================");
-//        Account account2 = new CheckingAccount(345);
-//        System.out.println(account2);
-//        account2.deposit(20000);
-//        account2.withdraw(50000);
+        Bank bank = new Bank(5);
+        bank.createAccount(savingAccount);
+        bank.createAccount(checkingAccount);
+        bank.createAccount(studentAccount);
 
+
+        System.out.println("===기존금액===");
+        bank.print();
+        System.out.println("===이자붙은거===");
+        bank.addinterest();
+        bank.print();
+
+        System.out.println();
+        System.out.println("===초과인출===");
+        checkingAccount.draft(50000000);
+
+        System.out.println();
+        System.out.println("===학생적금깨기===");
+        studentAccount.studentWithdraw(15000, 2024);
 
 
     }
+
 }
