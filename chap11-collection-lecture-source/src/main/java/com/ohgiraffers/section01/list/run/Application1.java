@@ -90,6 +90,7 @@ public class Application1 {
 
         System.out.println("=========== ArrayList ===========");
         /* 설명. ArrayList에서 제공하는 add메소드로 쉽게 해 보자. */
+//        Vector intArrList = new Vector();      // 벡터도 가능
         ArrayList<Integer> intArrList = new ArrayList<>();      // int값으로 제한
         for (int i = 0; i < 5; i++) {
             intArrList.add(i + 1);
@@ -118,5 +119,40 @@ public class Application1 {
 
         /* 설명. ArrayList 의 칸에는 기본 자료형 값이 직접 들어가는 것이 아니라 참조 자료형의 주소값이 정수 형으로 들어가있는 형태이다. */
 
+
+
+
+        /* 설명. ArrayList를 활용해 정렬을 진행해 보자. */
+        List<String> stringList = new ArrayList<>();
+        stringList.add("apple");
+        stringList.add("orange");
+        stringList.add("banana");
+        stringList.add("mango");
+        stringList.add("grape");
+
+        System.out.println("stringList = " + stringList);
+
+        /* 설명. Collections의 sort()메소드를 활용한 정렬 */
+        Collections.sort(stringList);
+        System.out.println("stringList = " + stringList);
+
+        List<Integer> integerList = new ArrayList<>();
+        integerList.add(4);
+        integerList.add(20);
+        integerList.add(5);
+        integerList.add(8);
+        integerList.add(14);
+
+        System.out.println("integerList = " + integerList);
+        Collections.sort(integerList);
+        System.out.println("integerList = " + integerList);
+
+        /* 설명. 우리가 참조 자료형의 정렬 기준을 바꿀 수 없다. */
+        /* 설명. 내림차순으로 바꾸기 위해 ArrayList에서 LinkedList로 교체 */
+        stringList = new LinkedList<>(stringList);
+        Iterator<String> iter = ((LinkedList<String>) stringList).descendingIterator();
+        while(iter.hasNext()) {
+            System.out.println(iter.next());
+        }
     }
 }

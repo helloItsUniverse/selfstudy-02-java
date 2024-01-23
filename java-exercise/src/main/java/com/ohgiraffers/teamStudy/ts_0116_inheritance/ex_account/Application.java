@@ -5,23 +5,31 @@ import java.util.Scanner;
 public class Application {
     public static void main(String[] args) {
 
-        SavingAccount savingAccount = new SavingAccount(0, 1.5);
-        savingAccount.deposit(50000);
-        CheckingAccount checkingAccount = new CheckingAccount(1, 20);
+        Bank bank = new Bank();
+
+        SavingAccount savingAccount1 = new SavingAccount(0, 0.01);
+        savingAccount1.deposit(50000);
+        SavingAccount savingAccount2 = new SavingAccount(1, 0.02);
+        savingAccount2.deposit(50000);
+
+
+        CheckingAccount checkingAccount = new CheckingAccount(2, 20);
         checkingAccount.deposit(100000);
-        StudentAccount studentAccount = new StudentAccount(2, 3.5, 2030);
+        StudentAccount studentAccount = new StudentAccount(3, 0.05, 2030);
         studentAccount.deposit(30000);
 
-        Bank bank = new Bank(5);
-        bank.createAccount(savingAccount);
-        bank.createAccount(checkingAccount);
-        bank.createAccount(studentAccount);
+//        bank.createAccount(savingAccount1);
+//        bank.createAccount(savingAccount2);
+//        bank.deleteAccount(savingAccount2);
+//        bank.createAccount(checkingAccount);
+//        bank.createAccount(studentAccount);
+
 
 
         System.out.println("===기존금액===");
         bank.print();
         System.out.println("===이자붙은거===");
-        bank.addinterest();
+        bank.addInterest();
         bank.print();
 
         System.out.println();
