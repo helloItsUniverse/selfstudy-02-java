@@ -10,12 +10,13 @@ public class SavingAccount extends Account {
     }
 
     public void addInterest(){
-        deposit(getBalance() * interestRate);
+        deposit(super.getBalance() * interestRate);
+        System.out.println("적금계좌에 이자 추가됨...");
     }
 
     @Override
     public void deposit(double sum) {
         super.deposit(sum);
-        System.out.println();
+//        System.out.println();
     }
 }

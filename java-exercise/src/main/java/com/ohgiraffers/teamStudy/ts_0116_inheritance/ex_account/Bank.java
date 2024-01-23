@@ -12,19 +12,13 @@ public class Bank {
         this.accList = new ArrayList<>();
     }
 
-    Account[] accarray;
-    int index = 0;
 
 
-    public Bank(int num){
-        accarray = new Account[num];
-    }
-
-    public void createAccount(Account account){
-//        accarray[index++] = account;
+    public Account createAccount(Account account){
         accList.add(account);
         String accName = account.getClass().getSimpleName();
         System.out.println(accName + " 계좌 생성됨...");
+        return account;
     }
 
     public void deleteAccount(Account account){
@@ -36,7 +30,7 @@ public class Bank {
 
     public void addInterest(){
         for(Account account : accList){
-            if(account instanceof SavingAccount){
+            if((account instanceof SavingAccount) && !(account instanceof StudentAccount)){
                 ((SavingAccount)account).addInterest();
             }
             if(account instanceof StudentAccount){
