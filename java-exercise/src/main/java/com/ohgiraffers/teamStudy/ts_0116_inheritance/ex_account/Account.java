@@ -25,7 +25,7 @@ public class Account {
    public double getBalance() {
       return bal;
    }
-   public double getAccountNumber() {
+   public int getAccountNumber() {
       return accnum;
    }
 

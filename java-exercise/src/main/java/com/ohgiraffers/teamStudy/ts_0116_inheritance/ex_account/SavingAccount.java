@@ -17,6 +17,6 @@ public class SavingAccount extends Account {
     @Override
     public void deposit(double sum) {
         super.deposit(sum);
-//        System.out.println();
+//        this.print();
     }
 }

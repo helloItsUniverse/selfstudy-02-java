@@ -7,10 +7,15 @@ public class Application {
 
         Bank bank = new Bank();
 
-        Account savingAccount1 = bank.createAccount(new SavingAccount(0, 0.01));
-        Account savingAccount2 = bank.createAccount(new SavingAccount(1, 0.02));
-        Account checkingAccount = bank.createAccount(new CheckingAccount(2, 20));
-        Account studentAccount = bank.createAccount(new StudentAccount(3, 0.01, 2030));
+        SavingAccount savingAccount1 = new SavingAccount(0, 0.01);
+        SavingAccount savingAccount2 = new SavingAccount(1, 0.02);
+        CheckingAccount checkingAccount = new CheckingAccount(2, 20000);
+        StudentAccount studentAccount = new StudentAccount(3, 0.05, 2030);
+
+        bank.createAccount(savingAccount1);
+        bank.createAccount(savingAccount2);
+        bank.createAccount(checkingAccount);
+        bank.createAccount(studentAccount);
 
 
         bank.deleteAccount(savingAccount2);
@@ -29,8 +34,9 @@ public class Application {
         bank.print();
 
 //        System.out.println();
-//        System.out.println("===초과인출===");
-//        checkingAccount.draft(50000000);
+        System.out.println("=== 초과인출 ===");
+        checkingAccount.draft(130000);
+
 //
 //        System.out.println();
 //        System.out.println("===학생적금깨기===");

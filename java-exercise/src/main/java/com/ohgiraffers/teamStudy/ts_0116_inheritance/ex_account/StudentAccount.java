@@ -1,7 +1,11 @@
 package com.ohgiraffers.teamStudy.ts_0116_inheritance.ex_account;
 
+import java.time.LocalDate;
+
 public class StudentAccount extends SavingAccount {
     private int withdrawYear;
+    private LocalDate localDate = LocalDate.now();
+
 
     private double studentInterestRate;
 
@@ -11,17 +15,14 @@ public class StudentAccount extends SavingAccount {
         this.studentInterestRate = studentInterestRate;
     }
 
-
     public void addInterest() {
-        deposit(super.getBalance() * studentInterestRate);
+        deposit(getBalance() * studentInterestRate);
         System.out.println("학생계좌에 이자 추가됨...");
     }
 
+    public void withdraw(double sum, LocalDate now) {
 
-    //    public void addInterest(){
-//        deposit(getBalance() * studentInterestRate);
-//        System.out.println("학생계좌에 이자 추가됨...");
-//    }
+    }
 
     public void studentWithdraw(double sum, int now){
         if(now < withdrawYear){
