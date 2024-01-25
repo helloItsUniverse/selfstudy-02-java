@@ -7,10 +7,34 @@ public class StudentAccount extends SavingAccount {
     private LocalDate localDate = LocalDate.now();
 
 
-    private double studentInterestRate;
+    private double studentInterestRate = 5.0;
 
     public StudentAccount(int a) {
         super(a);
+    }
+
+    public int getWithdrawYear() {
+        return withdrawYear;
+    }
+
+    public void setWithdrawYear(int withdrawYear) {
+        this.withdrawYear = withdrawYear;
+    }
+
+    public LocalDate getLocalDate() {
+        return localDate;
+    }
+
+    public void setLocalDate(LocalDate localDate) {
+        this.localDate = localDate;
+    }
+
+    public double getStudentInterestRate() {
+        return studentInterestRate;
+    }
+
+    public void setStudentInterestRate(double studentInterestRate) {
+        this.studentInterestRate = studentInterestRate;
     }
 
     public StudentAccount(int a, double studentInterestRate, int withdrawYear){

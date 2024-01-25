@@ -2,10 +2,16 @@ package com.ohgiraffers.teamStudy.ts_0116_inheritance.ex_account;
 
 public class CheckingAccount extends Account {
 
-    private double overDraft;
+    private double overDraft = 0.0;
+
+
 
     public CheckingAccount(int a) {
         super(a);
+    }
+
+    public double getOverDraft() {
+        return overDraft;
     }
 
     public void setOverDraft(double overDraft) {

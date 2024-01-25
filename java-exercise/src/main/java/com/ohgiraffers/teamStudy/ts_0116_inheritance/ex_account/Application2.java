@@ -8,7 +8,6 @@ public class Application2 implements AccountInterface{
         Bank bank = new Bank();
         boolean run = true;
         int userSelection = 0;
-        Random randomAccountNumber = new Random();
 
         Scanner sc = new Scanner(System.in);
 
@@ -22,27 +21,40 @@ public class Application2 implements AccountInterface{
                     userSelection = sc.nextInt();
                     switch (userSelection) {
                         case SAVING:
-                            bank.createAccount(randomAccountNumber.nextInt(), SAVING);
+                            bank.createAccount(makeRandomAccountNumber(), SAVING);
                             break;
                         case STUDENT:
-                            bank.createAccount(randomAccountNumber.nextInt(), STUDENT);
+                            bank.createAccount(makeRandomAccountNumber(), STUDENT);
                             break;
                         case CHECKING:
-                            bank.createAccount(randomAccountNumber.nextInt(), CHECKING);
-                            userSelection = sc.nextInt();
-                            ((CheckingAccount)(bank.getAccList().get(bank.getAccList().size() - 1))).setOverDraft(userSelection);
+                            bank.createAccount(makeRandomAccountNumber(), CHECKING);
+                            bank.setOverDraft();
                             break;
                     }
                     break;
 
-                case INQUIRY_ACCOUNTS:
+                case INQUIRY_ALL_ACCOUNTS:
                     bank.inquiryAccountList();
+                    break;
+
+                case INQUIRY_ACCOUNT:
+                    System.out.print("조회할 계좌의 계좌번호를 입력하세요: ");
+                    bank.inquiryAccountList();
+                    userSelection = sc.nextInt();
+                    bank.inquiryAccount(userSelection);
                     break;
 
                 case DELETE_ACCOUNT:
                     bank.printDeleteAccountMenu();
                     userSelection = sc.nextInt();
                     bank.deleteAccount(userSelection);
+                    break;
+
+                case DEPOSIT:
+                    bank.depositMoney();
+                    break;
+
+                case WITHDRAW:
                     break;
 
                 case TERMINATION:
@@ -53,5 +65,8 @@ public class Application2 implements AccountInterface{
         }
     }
 
-
+    private static int makeRandomAccountNumber() {
+        Random random = new Random();
+        return random.nextInt(1100000000, 1109999999);
+    }
 }
