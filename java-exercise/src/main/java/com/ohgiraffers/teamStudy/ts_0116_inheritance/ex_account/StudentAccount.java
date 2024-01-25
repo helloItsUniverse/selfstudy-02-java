@@ -9,6 +9,10 @@ public class StudentAccount extends SavingAccount {
 
     private double studentInterestRate;
 
+    public StudentAccount(int a) {
+        super(a);
+    }
+
     public StudentAccount(int a, double studentInterestRate, int withdrawYear){
         super(a, studentInterestRate);
         this.withdrawYear = withdrawYear;

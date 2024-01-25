@@ -14,19 +14,19 @@ public class Application1 {
         try {
 //            et.checkEnoughMoney(-30000, 50000);
 //            et.checkEnoughMoney(30000, -50000);
-//            et.checkEnoughMoney(50000, 30000);
-            et.checkEnoughMoney(30000, 50000);
+            et.checkEnoughMoney(50000, 30000);
+//            et.checkEnoughMoney(30000, 50000);
 
 
-//        } catch (PriceNegativeException e) {
-//            System.out.println(e.getMessage());
-//        } catch (NotEnoughMoneyException e) {
-//            System.out.println(e.getMessage());
-//        } catch (MoneyNegativeException e) {
-//            System.out.println(e.getMessage());
-//        }
-        } catch (Exception e) {     // 다형성을 활용한 catch 처리 방식
-            System.out.println("예외 메시지: " + e.getMessage());
+        } catch (PriceNegativeException e) {
+            System.out.println(e.getMessage());
+        } catch (NotEnoughMoneyException e) {
+            System.out.println(e.getMessage());
+        } catch (MoneyNegativeException e) {
+            System.out.println(e.getMessage());
         }
+//        } catch (Exception e) {     // 다형성을 활용한 catch 처리 방식
+//            System.out.println("예외 메시지: " + e.getMessage());
+//        }
     }
 }

@@ -4,13 +4,25 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Bank {
+public class Bank implements AccountInterface {
 
+//    private static final int SAVING = 1;
+//    private static final int STUDENT = 2;
+//    private static final int CHECKING = 3;
 
     private ArrayList<Account> accList = new ArrayList<>();
 
+    public ArrayList<Account> getAccList() {
+        return accList;
+    }
+
+    public void setAccList(ArrayList<Account> accList) {
+        this.accList = accList;
+    }
+
     public Bank() {
     }
+
 
 
     public String extractAccountKind(Account account) {
@@ -30,18 +42,51 @@ public class Bank {
         return accKind;
     }
 
-    public void createAccount(Account account){
-        accList.add(account);
-        String accKind = extractAccountKind(account);
-        System.out.println("계좌번호 " + account.getAccountNumber() + " " + accKind + " 계좌 생성됨...");
+//    public int getSAVING() {
+//        return SAVING;
+//    }
+//
+//    public int getSTUDENT() {
+//        return STUDENT;
+//    }
+//
+//    public int getCHECKING() {
+//        return CHECKING;
+//    }
+
+    public void createAccount(int accNum, int accType) {
+        if (accType == SAVING) accList.add(new SavingAccount(accNum));
+        else if (accType == STUDENT) accList.add(new StudentAccount(accNum));
+        else if (accType == CHECKING) {
+            accList.add(new CheckingAccount(accNum));
+
+            ((CheckingAccount)(accList.get(accList.size() - 1))).setOverDraft();
+        }
+        else System.out.println("잘못 입력하셨습니다.");
+
+        String accKind = extractAccountKind(accList.get(accList.size() - 1));
+        System.out.println("계좌번호 " + accList.get(accList.size() - 1).getAccountNumber() + " " + accKind + " 계좌가 개설되었습니다...");
     }
 
-    public void deleteAccount(Account account){
-        accList.remove(account);
-        String accKind = extractAccountKind(account);
-        System.out.println("계좌번호 " + account.getAccountNumber() + " " + accKind + " 계좌 해지됨...");
+    public void deleteAccount(int accNum){
+        for (Account account : accList) {
+            if (account.getAccountNumber() == accNum) {
+                String accKind = extractAccountKind(account);
+                accList.remove(account);
+                System.out.println("계좌번호 " + account.getAccountNumber() + " " + accKind + " 계좌 해지됨...");
+                break;
+            }
+        }
     }
 
+    public void inquiryAccountList() {
+        System.out.println("\n======== 계좌 목록 ========");
+        for (Account account : accList) {
+            String accKind = extractAccountKind(account);
+            System.out.println(accKind + "계좌 " + account);
+        }
+        System.out.println("=========================\n");
+    }
 
 
     public void addInterest(){
@@ -61,5 +106,31 @@ public class Bank {
         }
     }
 
+    public void printMainMenu() {
+        System.out.println("\n======== 쿵야은행 ========");
+        System.out.print("Select\n" +
+                "1 for 계좌 개설\n" +
+                "2 for 계좌 조회\n" +
+                "3 for 계좌 해지\n" +
+                "4 for 예금 적금\n" +
+                "5 for 예금 인출\n" +
+                "9 for 프로그램 종료\n" +
+                "선택하십시오: ");
+    }
+
+    public void printCreateAccountMenu() {
+        System.out.println("\n======== 계좌 개설 ========");
+        System.out.print("Select\n" +
+                "1 for 적금계좌 개설\n" +
+                "2 for 학생적금계좌 개설\n" +
+                "3 for 수표계좌 개설\n" +
+                "선택하십시오: ");
+    }
+
+    public void printDeleteAccountMenu() {
+        System.out.println("\n======== 계좌 해지 ========");
+        inquiryAccountList();
+        System.out.print("해지할 계좌의 계좌번호를 입력하십시오: ");
+    }
 
 }

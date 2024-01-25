@@ -4,6 +4,14 @@ public class CheckingAccount extends Account {
 
     private double overDraft;
 
+    public CheckingAccount(int a) {
+        super(a);
+    }
+
+    public void setOverDraft(double overDraft) {
+        this.overDraft = overDraft;
+    }
+
     public CheckingAccount (int a, double overDraft){
         super(a);
         this.overDraft = overDraft;

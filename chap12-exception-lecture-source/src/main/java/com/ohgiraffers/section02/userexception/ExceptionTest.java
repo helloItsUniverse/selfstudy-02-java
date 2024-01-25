@@ -7,8 +7,8 @@ import com.ohgiraffers.section02.userexception.exception.PriceNegativeException;
 public class ExceptionTest {
 
     public void checkEnoughMoney(int price, int money)
-//            throws PriceNegativeException, MoneyNegativeException, NotEnoughMoneyException {
-            throws Exception {
+            throws PriceNegativeException, MoneyNegativeException, NotEnoughMoneyException {
+//            throws Exception {
 
         /* 설명. throw를 통한 예외 발생 시 바로 메소드를 호출한 곳으로 예외 인스턴스와 함께 반환된다. */
         if (price < 0) {
