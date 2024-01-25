@@ -21,10 +21,9 @@ public class Application {
             int input = sc.nextInt();
 
             switch (input) {
-                case 1:
-                    mm.selectAllMembers();
+                case 1: mm.selectAllMembers();
                     break;
-                case 2:
+                case 2: mm.selectMember(chooseMemberNo());
                     break;
                 case 3:
                     break;
@@ -36,9 +35,13 @@ public class Application {
                 default:
                     System.out.println("번호를 다시 제대로 입력해 주세요");
             }
-
         }
+    }
 
-
+    /* 설명. 회원 1명 조회를 위해 해당 회원 번호를 입력받아 반환하는 메소드 */
+    private static int chooseMemberNo() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("회원번호를 입력하세요: ");
+        return sc.nextInt();
     }
 }

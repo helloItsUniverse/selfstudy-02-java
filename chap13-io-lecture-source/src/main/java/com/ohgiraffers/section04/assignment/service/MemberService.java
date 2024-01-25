@@ -21,4 +21,15 @@ public class MemberService {
             System.out.println(m);
         }
     }
+
+    /* 설명. 전달된 회원번호를 활용해 repository에 있는 memberList로부터 해당 회원 찾아 반환 받기 */
+    public void selectMember(int memNo) {
+        Member selectedMember = mr.selectMember(memNo);
+
+        if (selectedMember == null) {
+            System.out.println("그런 회원이 없네요 ㅠㅠ");
+        } else {
+            System.out.println("조회된 회원은: " + selectedMember);
+        }
+    }
 }
