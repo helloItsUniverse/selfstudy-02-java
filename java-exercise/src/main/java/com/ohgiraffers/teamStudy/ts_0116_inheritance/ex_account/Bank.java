@@ -73,19 +73,26 @@ public class Bank implements AccountInterface {
         inquiryAccountList();
         System.out.print("입금할 계좌의 계좌번호를 입력하세요: ");
         Scanner sc = new Scanner(System.in);
-        int userInputAccountNum = sc.nextInt();
+        int accNum = sc.nextInt();
 
-        for (Account account: accList) {
-            if (account.getAccountNumber() == userInputAccountNum) {
-                String accKind = extractAccountKind(account);
-                System.out.println("계좌번호 " + account.getAccountNumber() + " " + accKind + " 계좌에 입금할 금액을 입력하세요: ");
+        Account account = findAccount(accNum);
+        String accKind = extractAccountKind(account);
+        System.out.println("계좌번호 " + account.getAccountNumber() + " " + accKind + " 계좌에 입금할 금액을 입력하세요: ");
 
-                int userInput = sc.nextInt();
-                account.deposit(userInput);
-                System.out.println("계좌번호 " + account.getAccountNumber() + " " + accKind + " 계좌에 " + userInput + "원 만큼 입금되었습니다.");
-                break;
-            }
-        }
+        int userInput = sc.nextInt();
+        account.deposit(userInput);
+        System.out.println("계좌번호 " + account.getAccountNumber() + " " + accKind + " 계좌에 " + userInput + "원 만큼 입금되었습니다.");
+//        for (Account account: accList) {
+//            if (account.getAccountNumber() == accNum) {
+//                String accKind = extractAccountKind(account);
+//                System.out.println("계좌번호 " + account.getAccountNumber() + " " + accKind + " 계좌에 입금할 금액을 입력하세요: ");
+//
+//                int userInput = sc.nextInt();
+//                account.deposit(userInput);
+//                System.out.println("계좌번호 " + account.getAccountNumber() + " " + accKind + " 계좌에 " + userInput + "원 만큼 입금되었습니다.");
+//                break;
+//            }
+//        }
     }
 
     public void inquiryAccountList() {

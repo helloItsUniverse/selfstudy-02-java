@@ -34,6 +34,10 @@ public class Member implements Serializable {       // 객체 입출력을 위�
         this.bloodType = bloodType;
     }
 
+    public void setMemNo(int memNo) {
+        this.memNo = memNo;
+    }
+
     public void setBloodType(BloodType bloodType) {
         this.bloodType = bloodType;
     }
