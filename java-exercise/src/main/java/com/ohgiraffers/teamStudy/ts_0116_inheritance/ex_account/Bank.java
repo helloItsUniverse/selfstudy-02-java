@@ -6,9 +6,6 @@ import java.util.Scanner;
 
 public class Bank implements AccountInterface {
 
-//    private static final int SAVING = 1;
-//    private static final int STUDENT = 2;
-//    private static final int CHECKING = 3;
 
     private ArrayList<Account> accList = new ArrayList<>();
 
@@ -24,24 +21,6 @@ public class Bank implements AccountInterface {
     }
 
 
-
-    public String extractAccountKind(Account account) {
-        String accKind = "";
-        String accName = account.getClass().getSimpleName();
-        switch (accName){
-            case "SavingAccount":
-                accKind = "적금";
-                break;
-            case "CheckingAccount":
-                accKind = "수표";
-                break;
-            case "StudentAccount":
-                accKind = "학생";
-                break;
-        }
-        return accKind;
-    }
-
 //    public int getSAVING() {
 //        return SAVING;
 //    }
@@ -53,6 +32,15 @@ public class Bank implements AccountInterface {
 //    public int getCHECKING() {
 //        return CHECKING;
 //    }
+
+    public Account findAccount(int accNumInput) {
+        for(Account account: accList) {
+            if (account.getAccountNumber() == accNumInput) {
+                return account;
+            }
+        }
+        return null;
+    }
 
     public void createAccount(int accNum, int accType) {
         if (accType == SAVING) accList.add(new SavingAccount(accNum));
@@ -75,14 +63,10 @@ public class Bank implements AccountInterface {
 
 
     public void deleteAccount(int accNum){
-        for (Account account : accList) {
-            if (account.getAccountNumber() == accNum) {
-                String accKind = extractAccountKind(account);
-                accList.remove(account);
-                System.out.println("계좌번호 " + account.getAccountNumber() + " " + accKind + " 계좌 해지됨...");
-                break;
-            }
-        }
+        Account account = findAccount(accNum);
+        accList.remove(account);
+        String accKind = extractAccountKind(account);
+        System.out.println("계좌번호 " + account.getAccountNumber() + " " + accKind + " 계좌 해지됨...\n");
     }
 
     public void depositMoney() {
@@ -105,60 +89,24 @@ public class Bank implements AccountInterface {
     }
 
     public void inquiryAccountList() {
-        System.out.println("\n================== 계좌 목록 ==================");
-        for (Account account : accList) {
-            String accKind = extractAccountKind(account);
-            System.out.print(accKind + "계좌 | " +
-                    account.toString().substring(0,7) + "-" +
-                    account.toString().substring(7,10) + "-" +
-                    account.toString().substring(10) + "원");
-
-            // 적금계좌의 경우
-            if ((account instanceof SavingAccount) && !(account instanceof StudentAccount)) {
-                System.out.print(" | 이자율: ");
-                System.out.println(((SavingAccount) account).getInterestRate() + "%");
-
-            // 학생계좌의 경우
-            } else if (account instanceof StudentAccount) {
-                System.out.print(" | 이자율: ");
-                System.out.println(((StudentAccount) account).getStudentInterestRate() + "%");
-
-            // 수표계좌의 경우
-            } else if (account instanceof CheckingAccount) {
-                System.out.print(" | 초과인출한도: ");
-                System.out.println(((CheckingAccount) account).getOverDraft() + "원");
+        System.out.println("\n================== 계좌 목록 ==================\n");
+        if (!accList.isEmpty()) {
+            for (Account account : accList) {
+                templatePrintAccount(account);
             }
+        } else {
+            System.out.println("개설된 계좌가 없습니다.");
         }
-        System.out.println("=============================================\n");
+        System.out.println("\n=============================================\n");
     }
 
     public void inquiryAccount(int accNum) {
+        System.out.println("\n================== 계좌 조회 ==================\n");
+        Account account = findAccount(accNum);
+        if (account != null) templatePrintAccount(account);
+        else System.out.println("조회된 계좌가 없습니다.\n계좌를 개설하거나 계좌번호를 다시 입력해주세요.");
+        System.out.println("\n=============================================\n");
 
-        for (Account account: accList) {
-            if (account.getAccountNumber() == accNum) {
-                String accKind = extractAccountKind(account);
-                System.out.print(accKind + "계좌 | " +
-                        account.toString().substring(0,7) + "-" +
-                        account.toString().substring(7,10) + "-" +
-                        account.toString().substring(10) + "원");
-
-                // 적금계좌의 경우
-                if ((account instanceof SavingAccount) && !(account instanceof StudentAccount)) {
-                    System.out.print(" | 이자율: ");
-                    System.out.println(((SavingAccount) account).getInterestRate() + "%");
-
-                    // 학생계좌의 경우
-                } else if (account instanceof StudentAccount) {
-                    System.out.print(" | 이자율: ");
-                    System.out.println(((StudentAccount) account).getStudentInterestRate() + "%");
-
-                    // 수표계좌의 경우
-                } else if (account instanceof CheckingAccount) {
-                    System.out.print(" | 초과인출한도: ");
-                    System.out.println(((CheckingAccount) account).getOverDraft() + "원");
-                }
-            }
-        }
     }
 
     public void addInterest(){
@@ -169,6 +117,47 @@ public class Bank implements AccountInterface {
             if(account instanceof StudentAccount){
                 ((StudentAccount)account).addInterest();
             }
+        }
+    }
+
+    public String extractAccountKind(Account account) {
+        String accKind = "";
+        String accName = account.getClass().getSimpleName();
+        switch (accName){
+            case "SavingAccount":
+                accKind = "적금";
+                break;
+            case "CheckingAccount":
+                accKind = "수표";
+                break;
+            case "StudentAccount":
+                accKind = "학생";
+                break;
+        }
+        return accKind;
+    }
+
+    public void templatePrintAccount(Account account) {
+        String accKind = extractAccountKind(account);
+        System.out.print(accKind + "계좌 | " +
+                account.toString().substring(0,7) + "-" +
+                account.toString().substring(7,10) + "-" +
+                account.toString().substring(10) + "원");
+
+        // 적금계좌의 경우
+        if ((account instanceof SavingAccount) && !(account instanceof StudentAccount)) {
+            System.out.print(" | 이자율: ");
+            System.out.println(((SavingAccount) account).getInterestRate() + "%");
+
+            // 학생계좌의 경우
+        } else if (account instanceof StudentAccount) {
+            System.out.print(" | 이자율: ");
+            System.out.println(((StudentAccount) account).getStudentInterestRate() + "%");
+
+            // 수표계좌의 경우
+        } else if (account instanceof CheckingAccount) {
+            System.out.print(" | 초과인출한도: ");
+            System.out.println(((CheckingAccount) account).getOverDraft() + "원");
         }
     }
 
@@ -198,14 +187,14 @@ public class Bank implements AccountInterface {
                 "                       .                                            ,                     \n" +
                 "                      *                                                                   \n" +
                 "                     @      @@@@@@@@@/               .@@@@@@@@@,     #                    \n" +
-                "                     .   &@@@@@@.    @@&           #@@@@@@@@(/@&@@    ,                   \n" +
+                "                     .   &@@@@@@.    @@&            &@@@@@@.    @@&   ,                   \n" +
                 "                    *   @%@@@@&       *@           &@@@@@.       @@   %                   \n" +
                 "                    #   &@@@@@@       &@           @@@@@@        @.   @                   \n" +
                 "                    &   &@@@&&@@@%*#@&(&           @@@@#&@%    *(@,   &                   \n" +
                 "                    %     @(  (@@@&####            .%#,  @@@@%###.    .                   \n" +
                 "                   .        .,*/((#/*.               .*/((((/,.        @                  \n" +
                 "                  &#                                                    @                 \n" +
-                "                 (.,                  .             .                   */                \n" +
+                "                 (.,                                                    */                \n" +
                 "                ,../                    * _ _ _ _ *                    @..                \n" +
                 "                 /...@                                              .(...%                \n" +
                 "                  &...,,@..                                   ....(#,,,.@                 \n" +
