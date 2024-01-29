@@ -1,7 +1,9 @@
 package com.ohgiraffers.section02.uses.subsection02.intermediate;
 
 import java.util.stream.IntStream;
-
+/* 필기.
+ *  아주 중요한 부분이니 꼭 알아둘 것.
+* */
 public class Application2 {
     public static void main(String[] args) {
 
