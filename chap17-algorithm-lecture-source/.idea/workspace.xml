@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="084b2534-f126-43df-a9ff-9a175dccca28" name="Changes" comment="ch17 - move directory&#10;&#10;ch17 - move directory" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2becaKZHYP2dws22e1a1w64YzDZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "Application.Application1.executor": "Run",
+    "Application.Application2.executor": "Run",
+    "Application.Application4.executor": "Run",
+    "Gradle.chap17-algorithm-lecture-source [:Application.main()].executor": "Debug",
+    "JUnit.Application1Tests (1).executor": "Run",
+    "JUnit.Application1Tests.DFS1test.executor": "Run",
+    "JUnit.Application1Tests.bubbleSortTests.executor": "Run",
+    "JUnit.Application1Tests.executor": "Run",
+    "JUnit.Application1Tests.tree1test.executor": "Run",
+    "JUnit.Application2Tests.bubbleSortTests.executor": "Run",
+    "JUnit.Application2Tests.dp2test.executor": "Run",
+    "JUnit.Application2Tests.executor": "Run",
+    "JUnit.Application2Tests.greedy2test (1).executor": "Run",
+    "JUnit.Application2Tests.greedy2test.executor": "Run",
+    "JUnit.Application2Tests.tree2test.executor": "Run",
+    "JUnit.Application3Tests (1).executor": "Run",
+    "JUnit.Application3Tests.BFS2test.executor": "Run",
+    "JUnit.Application3Tests.bubbleSortTests.executor": "Run",
+    "JUnit.Application3Tests.executor": "Run",
+    "JUnit.Application3_1Tests.executor": "Run",
+    "JUnit.Application3_2Tests.executor": "Run",
+    "JUnit.Application4Tests.dp4test.executor": "Run",
+    "JUnit.Application4Tests.executor": "Run",
+    "JUnit.Application5Tests.dp5test.executor": "Run",
+    "JUnit.Application5Tests.executor": "Run",
+    "JUnit.ApplicationTests.bubbleSortTests.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/lecture_git/chap17-algorithm-lecture-source/src/main/java/com/ohgiraffers",
+    "last_opened_file_path": "C:/lecture_git/01_java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ohgiraffers.chap06.section01.dp" />
+      <recent name="com.ohgiraffers.chap05.section01.tree" />
+      <recent name="com.ohgiraffers.chap04.section01.greedy" />
+      <recent name="com.ohgiraffers.chap03.section01.graph_search" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\lecture_git\01_java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ohgiraffers.chap02.section01.sorting" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Application5Tests.dp5test">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application2Tests.dp2test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap17-algorithm-lecture-source.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.chap06.section01.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.chap06.section01.dp" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.chap06.section01.dp.Application2Tests" />
+      <option name="METHOD_NAME" value="dp2test(java.lang.Integer,java.lang.Integer)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application2Tests.tree2test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap17-algorithm-lecture-source.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.chap05.section01.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.chap05.section01.tree" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.chap05.section01.tree.Application2Tests" />
+      <option name="METHOD_NAME" value="tree2test(java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application3Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap17-algorithm-lecture-source.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.chap06.section01.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.chap06.section01.dp" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.chap06.section01.dp.Application3Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application4Tests.dp4test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap17-algorithm-lecture-source.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.chap06.section01.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.chap06.section01.dp" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.chap06.section01.dp.Application4Tests" />
+      <option name="METHOD_NAME" value="dp4test(java.lang.String,java.lang.Integer)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application5Tests.dp5test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap17-algorithm-lecture-source.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.chap06.section01.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.chap06.section01.dp" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.chap06.section01.dp.Application5Tests" />
+      <option name="METHOD_NAME" value="dp5test(java.lang.String,java.lang.Integer)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Application5Tests.dp5test" />
+        <item itemvalue="JUnit.Application4Tests.dp4test" />
+        <item itemvalue="JUnit.Application3Tests" />
+        <item itemvalue="JUnit.Application2Tests.dp2test" />
+        <item itemvalue="JUnit.Application2Tests.tree2test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="084b2534-f126-43df-a9ff-9a175dccca28" name="Changes" comment="" />
+      <created>1706579048927</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706579048927</updated>
+      <workItem from="1706579050009" duration="59605000" />
+      <workItem from="1707094548190" duration="148000" />
+    </task>
+    <task id="LOCAL-00001" summary="ch17, ch00(파라미터화), 연습문제 추가&#10;&#10;ch17, ch00(파라미터화), 연습문제 추가">
+      <option name="closed" value="true" />
+      <created>1706674717036</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706674717036</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ch17, 백준 연습문제 추가&#10;&#10;ch17, 백준 연습문제 추가">
+      <option name="closed" value="true" />
+      <created>1706682424337</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706682424337</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ch17-검색-DFS, BFS 수정&#10;&#10;ch17-검색-DFS, BFS 수정">
+      <option name="closed" value="true" />
+      <created>1706683026922</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706683026922</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ch17-greedy 추가 / 백준 문제 추가&#10;&#10;ch17-greedy 추가 / 백준 문제 추가">
+      <option name="closed" value="true" />
+      <created>1706752125854</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706752125854</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ch17-tree,dp 추가 / 백준 문제 추가&#10;&#10;ch17-tree,dp 추가 / 백준 문제 추가">
+      <option name="closed" value="true" />
+      <created>1706769518547</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706769518547</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ch17-greedy 수정&#10;&#10;ch17-greedy 수정">
+      <option name="closed" value="true" />
+      <created>1706769790634</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706769790634</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ch17 - move directory&#10;&#10;ch17 - move directory">
+      <option name="closed" value="true" />
+      <created>1707094616388</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707094616388</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ch17 - move directory&#10;&#10;ch17 - move directory">
+      <option name="closed" value="true" />
+      <created>1707094632856</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707094632856</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ch17, ch00(파라미터화), 연습문제 추가&#10;&#10;ch17, ch00(파라미터화), 연습문제 추가" />
+    <MESSAGE value="ch17, 백준 연습문제 추가&#10;&#10;ch17, 백준 연습문제 추가" />
+    <MESSAGE value="ch17-검색-DFS, BFS 수정&#10;&#10;ch17-검색-DFS, BFS 수정" />
+    <MESSAGE value="ch17-greedy 추가 / 백준 문제 추가&#10;&#10;ch17-greedy 추가 / 백준 문제 추가" />
+    <MESSAGE value="ch17-tree,dp 추가 / 백준 문제 추가&#10;&#10;ch17-tree,dp 추가 / 백준 문제 추가" />
+    <MESSAGE value="ch17-greedy 수정&#10;&#10;ch17-greedy 수정" />
+    <MESSAGE value="ch17 - move directory&#10;&#10;ch17 - move directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch17 - move directory&#10;&#10;ch17 - move directory" />
+  </component>
+</project>
