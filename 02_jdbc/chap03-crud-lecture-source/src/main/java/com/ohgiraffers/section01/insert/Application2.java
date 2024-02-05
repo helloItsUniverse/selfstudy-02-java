@@ -18,7 +18,7 @@ public class Application2 {
         int menuPrice = sc.nextInt();
         System.out.print("카테고리 코드를 입력하세요: ");
         int categoryCode = sc.nextInt();
-        System.out.print("판매 상태를 입력하세요(Y/N):");
+        System.out.print("판매 상태를 입력하세요(Y/N): ");
         sc.nextLine();
         String orderableStatus = sc.nextLine();
 
