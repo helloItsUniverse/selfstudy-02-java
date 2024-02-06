@@ -4,13 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="084b2534-f126-43df-a9ff-9a175dccca28" name="Changes" comment="ch17 - move directory&#10;&#10;ch17 - move directory" />
+    <list default="true" id="084b2534-f126-43df-a9ff-9a175dccca28" name="Changes" comment="ch17 - move directory&#10;&#10;ch17 - move directory">
+      <change afterPath="$PROJECT_DIR$/../02_jdbc/chap03-crud-lecture-source/src/main/java/com/ohgiraffers/section02/update/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_jdbc/chap03-crud-lecture-source/src/main/java/com/ohgiraffers/section02/update/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_jdbc/chap03-crud-lecture-source/src/main/java/com/ohgiraffers/section02/update/MenuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_jdbc/chap03-crud-lecture-source/src/main/java/com/ohgiraffers/section02/update/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_jdbc/chap03-crud-lecture-source/src/main/java/com/ohgiraffers/section03/delete/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-exercise/src/main/java/com/ohgiraffers/baekjoon_exercise/boj_ex_11000.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-exercise/src/main/java/com/ohgiraffers/baekjoon_exercise/boj_ex_11654.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-exercise/src/main/java/com/ohgiraffers/baekjoon_exercise/boj_ex_1546.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-exercise/src/main/java/com/ohgiraffers/baekjoon_exercise/boj_ex_2743.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-exercise/src/main/java/com/ohgiraffers/baekjoon_exercise/boj_ex_27866.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-exercise/src/main/java/com/ohgiraffers/baekjoon_exercise/boj_ex_9086.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_jdbc/chap03-crud-lecture-source/src/main/java/com/ohgiraffers/section01/insert/mapper/menu-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02_jdbc/chap03-crud-lecture-source/src/main/java/com/ohgiraffers/section01/insert/mapper/menu-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-exercise/src/main/java/com/ohgiraffers/baekjoon_exercise/boj_ex_10811.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-exercise/src/main/java/com/ohgiraffers/baekjoon_exercise/boj_ex_10811.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-exercise/src/main/java/com/ohgiraffers/baekjoon_exercise/boj_ex_5597.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-exercise/src/main/java/com/ohgiraffers/baekjoon_exercise/boj_ex_5597.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/../01_java/chap17-algorithm-lecture-source">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
@@ -33,54 +55,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Application.executor": "Run",
-    "Application.Application1.executor": "Run",
-    "Application.Application2.executor": "Run",
-    "Application.Application4.executor": "Run",
-    "Gradle.chap17-algorithm-lecture-source [:Application.main()].executor": "Debug",
-    "JUnit.Application1Tests (1).executor": "Run",
-    "JUnit.Application1Tests.DFS1test.executor": "Run",
-    "JUnit.Application1Tests.bubbleSortTests.executor": "Run",
-    "JUnit.Application1Tests.executor": "Run",
-    "JUnit.Application1Tests.tree1test.executor": "Run",
-    "JUnit.Application2Tests.bubbleSortTests.executor": "Run",
-    "JUnit.Application2Tests.dp2test.executor": "Run",
-    "JUnit.Application2Tests.executor": "Run",
-    "JUnit.Application2Tests.greedy2test (1).executor": "Run",
-    "JUnit.Application2Tests.greedy2test.executor": "Run",
-    "JUnit.Application2Tests.tree2test.executor": "Run",
-    "JUnit.Application3Tests (1).executor": "Run",
-    "JUnit.Application3Tests.BFS2test.executor": "Run",
-    "JUnit.Application3Tests.bubbleSortTests.executor": "Run",
-    "JUnit.Application3Tests.executor": "Run",
-    "JUnit.Application3_1Tests.executor": "Run",
-    "JUnit.Application3_2Tests.executor": "Run",
-    "JUnit.Application4Tests.dp4test.executor": "Run",
-    "JUnit.Application4Tests.executor": "Run",
-    "JUnit.Application5Tests.dp5test.executor": "Run",
-    "JUnit.Application5Tests.executor": "Run",
-    "JUnit.ApplicationTests.bubbleSortTests.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/lecture_git/chap17-algorithm-lecture-source/src/main/java/com/ohgiraffers",
-    "last_opened_file_path": "C:/lecture_git/01_java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.import",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Application1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Application2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Application4.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chap17-algorithm-lecture-source [:Application.main()].executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.Application1Tests (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application1Tests.DFS1test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application1Tests.bubbleSortTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application1Tests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application1Tests.tree1test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application2Tests.bubbleSortTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application2Tests.dp2test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application2Tests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application2Tests.greedy2test (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application2Tests.greedy2test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application2Tests.tree2test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application3Tests (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application3Tests.BFS2test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application3Tests.bubbleSortTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application3Tests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application3_1Tests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application3_2Tests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application4Tests.dp4test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application4Tests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application5Tests.dp5test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application5Tests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ApplicationTests.bubbleSortTests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/lecture_git/chap17-algorithm-lecture-source/src/main/java/com/ohgiraffers&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/lecture_git/01_java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.ohgiraffers.chap06.section01.dp" />
@@ -96,16 +118,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.Application5Tests.dp5test">
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Application2Tests.dp2test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="chap17-algorithm-lecture-source.test" />
       <extension name="coverage">
@@ -212,6 +224,7 @@
       <updated>1706579048927</updated>
       <workItem from="1706579050009" duration="59605000" />
       <workItem from="1707094548190" duration="148000" />
+      <workItem from="1707175709957" duration="1569000" />
     </task>
     <task id="LOCAL-00001" summary="ch17, ch00(파라미터화), 연습문제 추가&#10;&#10;ch17, ch00(파라미터화), 연습문제 추가">
       <option name="closed" value="true" />

@@ -12,6 +12,9 @@ public class boj_ex_10811 {
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
         int[] arr = new int[N];
+        for (int i = 0; i < N; i++) {
+            arr[i] = i + 1;
+        }
         int startIndex, endIndex;
         for (int i = 0; i < M; i++) {
             int tmp;
